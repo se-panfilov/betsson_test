@@ -8,7 +8,8 @@ import {MoviesListComponent} from './movies-list/movies-list.component'
 import {MoviesListItemComponent} from './movies-list-item/movies-list-item.component'
 import {MovieDetailComponent} from './movie-detail/movie-detail.component'
 import {MoviesComponent} from './movies/movies.component'
-import {MovieService} from './movie.service'
+import {MovieService} from './movie.service';
+import { MoviesSearchComponent } from './movies-search/movies-search.component'
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {MovieService} from './movie.service'
     MoviesListComponent,
     MoviesListItemComponent,
     MovieDetailComponent,
-    MoviesComponent
+    MoviesComponent,
+    MoviesSearchComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core'
-import {Movie} from "../movie";
+import {Component, OnInit, Input} from '@angular/core'
+import {Movie} from "../movie"
 
 @Component({
   selector: 'app-movies-list-item',
@@ -9,9 +9,12 @@ import {Movie} from "../movie";
 
 export class MoviesListItemComponent implements OnInit {
 
-  @Input() movie: Movie;
+  baseImgUrl = '../assets/images/movie-covers/'
 
-  constructor() { }
+  @Input() movie: Movie
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
