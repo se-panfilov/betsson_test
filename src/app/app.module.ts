@@ -5,7 +5,7 @@ import {HttpModule} from '@angular/http'
 import {AppRoutingModule} from './app-routing.module'
 import {AppComponent} from './app.component'
 import {MoviesListComponent} from './movies-list/movies-list.component'
-import {MovieItemComponent} from './movie-item/movie-item.component'
+import {MoviesListItemComponent} from './movies-list-item/movies-list-item.component'
 import {MovieDetailComponent} from './movie-detail/movie-detail.component'
 import {MoviesComponent} from './movies/movies.component'
 import {MovieService} from './movie.service'
@@ -14,7 +14,7 @@ import {MovieService} from './movie.service'
   declarations: [
     AppComponent,
     MoviesListComponent,
-    MovieItemComponent,
+    MoviesListItemComponent,
     MovieDetailComponent,
     MoviesComponent
   ],

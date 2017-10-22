@@ -6,6 +6,7 @@ import {Movie} from "../movie";
   templateUrl: './movies-list.component.html',
   styleUrls: ['./movies-list.component.css']
 })
+
 export class MoviesListComponent implements OnInit {
   @Input() movies: Movie[];
 
