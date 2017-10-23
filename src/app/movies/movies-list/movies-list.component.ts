@@ -2,7 +2,7 @@ import {Component, Input, OnInit} from '@angular/core'
 import {Movie} from '../movie'
 
 @Component({
-  selector: 'app-movies-list',
+  selector: 'movies-list',
   templateUrl: './movies-list.component.html',
   styleUrls: ['./movies-list.component.css']
 })

@@ -5,12 +5,12 @@ import {Movie} from '../movie'
 import {Genre} from "../genre"
 
 @Component({
-  selector: 'app-movies',
-  templateUrl: './movies.component.html',
-  styleUrls: ['./movies.component.css']
+  selector: 'movies',
+  templateUrl: './movies-page.component.html',
+  styleUrls: ['./movies-page.component.css']
 })
 
-export class MoviesComponent implements OnInit {
+export class MoviesPageComponent implements OnInit {
 
   movies: Movie[]
   genres: Genre[]

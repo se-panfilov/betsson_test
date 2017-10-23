@@ -1,9 +1,9 @@
 <section class="movie-filters">
   <h3 class="movie-filters__header">Filter by genre</h3>
-  <app-movie-filter-item
+  <movie-filter-item
     *ngFor="let genre of genres"
     [genre]="genre"
     (click)="onClick()"
   >
-  </app-movie-filter-item>
+  </movie-filter-item>
 </section>

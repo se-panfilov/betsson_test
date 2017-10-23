@@ -1,10 +1,6 @@
 import {combineReducers} from 'redux'
-import {composeReducers, defaultFormReducer} from '@angular-redux/form'
-import {createAnimalAPIReducer} from '../animals/api/reducer'
-import {ANIMAL_TYPES} from '../animals/model'
+import MovieReducers from '../movies/api/reducers'
 
-export const rootReducer = composeReducers(
-  defaultFormReducer(),
-  combineReducers({
-    movies: createAPIReducer(ANIMAL_TYPES.ELEPHANT)
-  }))
+export default combineReducers({
+  MovieReducers
+})

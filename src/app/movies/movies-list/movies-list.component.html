@@ -1,7 +1,7 @@
 <section class="movies-list">
-  <app-movies-list-item
+  <movies-list-item
     *ngFor="let movie of movies"
     [routerLink]="['/movie', movie.id]"
     [movie]="movie">
-  </app-movies-list-item>
+  </movies-list-item>
 </section>
