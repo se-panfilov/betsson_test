@@ -6,11 +6,11 @@ import { Observable } from "rxjs/Observable"
 // import {IAppState} from "../../store"
 
 @Component({
-  selector: 'movies-filters',
-  templateUrl: './movies-filters.component.html',
-  styleUrls: ['./movies-filters.component.css']
+  selector: 'movies-filters-list',
+  templateUrl: './movies-filters-list.component.html',
+  styleUrls: ['./movies-filters-list.component.css']
 })
-export class MoviesFiltersComponent implements OnInit {
+export class MoviesFiltersListComponent implements OnInit {
 
   @Input() genres: Genre[]
   @select() count$: Observable<number>

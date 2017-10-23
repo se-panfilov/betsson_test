@@ -8,7 +8,7 @@ import { MoviesPageComponent } from './movies-page/movies-page.component'
 import { MovieService } from './movie.service'
 import { GenreService } from "./genre.service"
 import { MoviesSearchComponent } from './movies-search/movies-search.component'
-import { MoviesFiltersComponent } from './movies-filters/movies-filters.component'
+import { MoviesFiltersListComponent } from './movies-filters-list/movies-filters-list.component'
 import { MoviesFilterItemComponent } from './movies-filter-item/movies-filter-item.component'
 import { AppRoutingModule } from "../app-routing.module"
 
@@ -19,7 +19,7 @@ import { AppRoutingModule } from "../app-routing.module"
     MovieDetailComponent,
     MoviesPageComponent,
     MoviesSearchComponent,
-    MoviesFiltersComponent,
+    MoviesFiltersListComponent,
     MoviesFilterItemComponent
   ],
   imports: [
