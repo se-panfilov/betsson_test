@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core'
+import { SET_MOVIE_NAME_FILTER } from "../constants/actions"
+import { Storage } from "../../store/storage"
 
 @Component({
   selector: 'movies-search',
@@ -12,6 +14,10 @@ export class MoviesSearchComponent implements OnInit {
   }
 
   ngOnInit () {
+  }
+
+  onChange () {
+    Storage.dispatch({type: SET_MOVIE_NAME_FILTER, data: this.model})
   }
 
 }

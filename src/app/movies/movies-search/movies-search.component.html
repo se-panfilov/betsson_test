@@ -3,6 +3,7 @@
     <input type="search"
            placeholder="Search"
            [(ngModel)]="model"
+           (ngModelChange)="onChange()"
            class="movies-search__input -search"
            name="val">
   </label>
