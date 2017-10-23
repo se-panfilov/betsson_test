@@ -2,7 +2,7 @@ import { fromJS } from 'immutable'
 import Reducers from './reducers'
 import { createStore } from 'redux'
 
-export let Storage: any = null
+export let Storage: any = {}
 
 export function initStorage (initialData: Object = {}): Object {
   initialData = fromJS(initialData)

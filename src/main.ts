@@ -3,6 +3,7 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic'
 
 import { AppModule } from './app/app.module'
 import { environment } from './environments/environment'
+import { initStorage, setStorage } from "./app/store/storage"
 
 if (environment.production) {
   enableProdMode()
@@ -10,3 +11,6 @@ if (environment.production) {
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.log(err))
+
+const store = initStorage()
+setStorage(store)

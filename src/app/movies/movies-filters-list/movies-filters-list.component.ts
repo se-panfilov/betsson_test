@@ -2,6 +2,8 @@ import { Component, Input, OnInit } from '@angular/core'
 import { Genre } from "../genre"
 import { NgRedux, select } from '@angular-redux/store'
 import { Observable } from "rxjs/Observable"
+import { Storage } from '../../store/storage'
+import { SET_GENRE_FILTER } from "../constants/actions"
 
 // import {IAppState} from "../../store"
 
@@ -15,10 +17,11 @@ export class MoviesFiltersListComponent implements OnInit {
   @Input() genres: Genre[]
   @select() count$: Observable<number>
 
-  // constructor(private ngRedux: NgRedux<IAppState>) {}
+  constructor () {
+  }
 
-  onClick () {
-    // this.ngRedux.dispatch({ type: 'INCREMENT' })
+  onClick (genre: Genre) {
+    Storage.dispatch({type: SET_GENRE_FILTER, data: genre})
   }
 
   ngOnInit () {

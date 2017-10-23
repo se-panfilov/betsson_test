@@ -3,7 +3,7 @@
   <movies-filter-item
     *ngFor="let genre of genres"
     [genre]="genre"
-    (click)="onClick()"
+    (click)="onClick(genre)"
   >
   </movies-filter-item>
 </section>
