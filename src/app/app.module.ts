@@ -25,4 +25,5 @@ import {MoviesModule} from './movies/movies.module'
   bootstrap: [AppComponent]
 })
 
-export class AppModule {}
+export class AppModule {
+}

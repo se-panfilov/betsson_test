@@ -4,11 +4,11 @@ import {createStore} from 'redux'
 
 export let Storage: any = null
 
-export function initStorage (initialData: Object = {}): Object {
+export function initStorage(initialData: Object = {}): Object {
   initialData = fromJS(initialData)
   return createStore(Reducers, initialData)
 }
 
-export function setStorage (storage: Object) {
+export function setStorage(storage: Object) {
   Storage = storage
 }

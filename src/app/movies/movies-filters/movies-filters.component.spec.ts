@@ -1,6 +1,6 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { MoviesFiltersComponent } from './movies-filters.component';
+import {MoviesFiltersComponent} from './movies-filters.component';
 
 describe('MoviesFiltersComponent', () => {
   let component: MoviesFiltersComponent;
@@ -8,9 +8,9 @@ describe('MoviesFiltersComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MoviesFiltersComponent ]
+      declarations: [MoviesFiltersComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

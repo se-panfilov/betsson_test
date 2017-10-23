@@ -19,7 +19,7 @@ export class GenreService {
       .catch(this.handleError)
   }
 
- private handleError(error: any): Promise<any> {
+  private handleError(error: any): Promise<any> {
     return Promise.reject(error.message || error)
   }
 

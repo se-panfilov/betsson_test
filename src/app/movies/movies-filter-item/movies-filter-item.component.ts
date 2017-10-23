@@ -10,7 +10,8 @@ export class MoviesFilterItemComponent implements OnInit {
 
   @Input() genre: Genre
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

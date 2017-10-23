@@ -2,6 +2,7 @@ import {Component, Input, OnInit} from '@angular/core'
 import {Genre} from "../genre"
 import {NgRedux, select} from '@angular-redux/store'
 import {Observable} from "rxjs/Observable"
+
 // import {IAppState} from "../../store"
 
 @Component({

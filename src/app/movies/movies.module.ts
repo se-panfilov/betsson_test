@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core'
-import { CommonModule } from '@angular/common'
+import {NgModule} from '@angular/core'
+import {CommonModule} from '@angular/common'
 import {FormsModule} from '@angular/forms'
 import {MoviesListComponent} from './movies-list/movies-list.component'
 import {MoviesListItemComponent} from './movies-list-item/movies-list-item.component'
@@ -31,4 +31,5 @@ import {AppRoutingModule} from "../app-routing.module"
   //bootstrap: [AppComponent]
 })
 
-export class MoviesModule { }
+export class MoviesModule {
+}
