@@ -1,5 +1,5 @@
-import {Component} from '@angular/core'
-import {initStorage, setStorage} from './store/storage'
+import { Component } from '@angular/core'
+import { initStorage, setStorage } from './store/storage'
 
 @Component({
   selector: 'root',
@@ -9,7 +9,7 @@ import {initStorage, setStorage} from './store/storage'
 
 export class AppComponent {
 
-  constructor() {
+  constructor () {
     const store = initStorage()
     setStorage(store)
   }

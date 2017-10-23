@@ -1,6 +1,6 @@
-import {Map} from 'immutable'
-import {SET_MOVIES_LIST} from '../constants/actions'
-import {MOVIES_LIST} from '../constants/storage'
+import { Map } from 'immutable'
+import { SET_MOVIES_LIST } from '../constants/actions'
+import { MOVIES_LIST } from '../constants/storage'
 
 const actions = {}
 

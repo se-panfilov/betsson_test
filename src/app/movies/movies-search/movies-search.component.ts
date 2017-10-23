@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core'
+import { Component, OnInit } from '@angular/core'
 
 @Component({
   selector: 'movies-search',
@@ -8,10 +8,10 @@ import {Component, OnInit} from '@angular/core'
 export class MoviesSearchComponent implements OnInit {
   model = ''
 
-  constructor() {
+  constructor () {
   }
 
-  ngOnInit() {
+  ngOnInit () {
   }
 
 }

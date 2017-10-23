@@ -1,5 +1,5 @@
-import {Component, Input, OnInit} from '@angular/core'
-import {Genre} from "../genre"
+import { Component, Input, OnInit } from '@angular/core'
+import { Genre } from "../genre"
 
 @Component({
   selector: 'movies-filter-item',
@@ -10,10 +10,10 @@ export class MoviesFilterItemComponent implements OnInit {
 
   @Input() genre: Genre
 
-  constructor() {
+  constructor () {
   }
 
-  ngOnInit() {
+  ngOnInit () {
   }
 
 }

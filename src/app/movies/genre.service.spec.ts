@@ -1,6 +1,6 @@
-import {TestBed, inject} from '@angular/core/testing';
+import { TestBed, inject } from '@angular/core/testing';
 
-import {GenreService} from './genre.service';
+import { GenreService } from './genre.service';
 
 describe('GenreService', () => {
   beforeEach(() => {

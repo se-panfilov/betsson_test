@@ -1,5 +1,5 @@
-import {Component, OnInit, Input} from '@angular/core'
-import {Movie} from '../movie'
+import { Component, OnInit, Input } from '@angular/core'
+import { Movie } from '../movie'
 
 @Component({
   selector: 'movies-list-item',
@@ -13,10 +13,10 @@ export class MoviesListItemComponent implements OnInit {
 
   @Input() movie: Movie
 
-  constructor() {
+  constructor () {
   }
 
-  ngOnInit() {
+  ngOnInit () {
   }
 
 }

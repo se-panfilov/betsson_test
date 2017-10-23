@@ -1,16 +1,16 @@
-import {NgModule} from '@angular/core'
-import {CommonModule} from '@angular/common'
-import {FormsModule} from '@angular/forms'
-import {MoviesListComponent} from './movies-list/movies-list.component'
-import {MoviesListItemComponent} from './movies-list-item/movies-list-item.component'
-import {MovieDetailComponent} from './movie-detail/movie-detail.component'
-import {MoviesPageComponent} from './movies-page/movies-page.component'
-import {MovieService} from './movie.service'
-import {GenreService} from "./genre.service"
-import {MoviesSearchComponent} from './movies-search/movies-search.component'
-import {MoviesFiltersComponent} from './movies-filters/movies-filters.component'
-import {MoviesFilterItemComponent} from './movies-filter-item/movies-filter-item.component'
-import {AppRoutingModule} from "../app-routing.module"
+import { NgModule } from '@angular/core'
+import { CommonModule } from '@angular/common'
+import { FormsModule } from '@angular/forms'
+import { MoviesListComponent } from './movies-list/movies-list.component'
+import { MoviesListItemComponent } from './movies-list-item/movies-list-item.component'
+import { MovieDetailComponent } from './movie-detail/movie-detail.component'
+import { MoviesPageComponent } from './movies-page/movies-page.component'
+import { MovieService } from './movie.service'
+import { GenreService } from "./genre.service"
+import { MoviesSearchComponent } from './movies-search/movies-search.component'
+import { MoviesFiltersComponent } from './movies-filters/movies-filters.component'
+import { MoviesFilterItemComponent } from './movies-filter-item/movies-filter-item.component'
+import { AppRoutingModule } from "../app-routing.module"
 
 @NgModule({
   declarations: [

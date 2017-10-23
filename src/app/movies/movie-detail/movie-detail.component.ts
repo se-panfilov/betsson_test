@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core'
+import { Component, OnInit } from '@angular/core'
 
 @Component({
   selector: 'movie-detail',
@@ -7,10 +7,10 @@ import {Component, OnInit} from '@angular/core'
 })
 export class MovieDetailComponent implements OnInit {
 
-  constructor() {
+  constructor () {
   }
 
-  ngOnInit() {
+  ngOnInit () {
   }
 
 }

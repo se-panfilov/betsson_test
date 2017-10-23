@@ -1,7 +1,7 @@
-import {Component, Input, OnInit} from '@angular/core'
-import {Genre} from "../genre"
-import {NgRedux, select} from '@angular-redux/store'
-import {Observable} from "rxjs/Observable"
+import { Component, Input, OnInit } from '@angular/core'
+import { Genre } from "../genre"
+import { NgRedux, select } from '@angular-redux/store'
+import { Observable } from "rxjs/Observable"
 
 // import {IAppState} from "../../store"
 
@@ -17,11 +17,11 @@ export class MoviesFiltersComponent implements OnInit {
 
   // constructor(private ngRedux: NgRedux<IAppState>) {}
 
-  onClick() {
+  onClick () {
     // this.ngRedux.dispatch({ type: 'INCREMENT' })
   }
 
-  ngOnInit() {
+  ngOnInit () {
   }
 
 }
