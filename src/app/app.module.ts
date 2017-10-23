@@ -11,8 +11,10 @@ import {MoviesComponent} from './movies/movies.component'
 import {MovieService} from './movie.service'
 import {GenreService} from "./genre.service"
 import {MoviesSearchComponent} from './movies-search/movies-search.component'
-import { MovieFiltersComponent } from './movie-filters/movie-filters.component'
-import { MovieFilterItemComponent } from './movie-filter-item/movie-filter-item.component'
+import {MovieFiltersComponent} from './movie-filters/movie-filters.component'
+import {MovieFilterItemComponent} from './movie-filter-item/movie-filter-item.component'
+import {NgReduxModule, NgRedux} from '@angular-redux/store'
+import {StoreModule} from './store/module'
 
 @NgModule({
   declarations: [
@@ -29,11 +31,12 @@ import { MovieFilterItemComponent } from './movie-filter-item/movie-filter-item.
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgReduxModule,
+    StoreModule
   ],
   providers: [MovieService, GenreService],
   bootstrap: [AppComponent]
 })
 
-export class AppModule {
-}
+export class AppModule {}
