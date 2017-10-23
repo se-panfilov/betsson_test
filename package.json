@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start:backend": "json-server --watch ./content/movie.mock-data.js",
+    "start:backend": "json-server --watch ./content/mock.api.js",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",

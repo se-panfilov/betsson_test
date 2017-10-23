@@ -6,8 +6,8 @@ import 'rxjs/add/operator/toPromise'
 @Injectable()
 export class MovieService {
 
-  private baseUrl = 'http://localhost:3000/movies'
-  private moviesUrl = 'api/movies'
+  private baseUrl = 'http://localhost:3000'
+  private moviesUrl = 'movies'
 
   constructor(private http: Http) {
   }
@@ -18,7 +18,6 @@ export class MovieService {
       .then(response => response.json() as Movie[])
       .catch(this.handleError)
   }
-
 
   getMovie(id: number): Promise<Movie> {
     const url = `${this.baseUrl}/${this.moviesUrl}/${id}`

@@ -9,8 +9,9 @@ import {MoviesListItemComponent} from './movies-list-item/movies-list-item.compo
 import {MovieDetailComponent} from './movie-detail/movie-detail.component'
 import {MoviesComponent} from './movies/movies.component'
 import {MovieService} from './movie.service'
-import {MoviesSearchComponent} from './movies-search/movies-search.component';
-import { MovieFiltersComponent } from './movie-filters/movie-filters.component';
+import {GenreService} from "./genre.service"
+import {MoviesSearchComponent} from './movies-search/movies-search.component'
+import { MovieFiltersComponent } from './movie-filters/movie-filters.component'
 import { MovieFilterItemComponent } from './movie-filter-item/movie-filter-item.component'
 
 @NgModule({
@@ -30,7 +31,7 @@ import { MovieFilterItemComponent } from './movie-filter-item/movie-filter-item.
     HttpModule,
     AppRoutingModule
   ],
-  providers: [MovieService],
+  providers: [MovieService, GenreService],
   bootstrap: [AppComponent]
 })
 

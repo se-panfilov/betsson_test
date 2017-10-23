@@ -1,12 +1,11 @@
-type GenreType = 'action' | 'adventure' | 'biography' | 'comedy' | 'crime'
-  | 'drama' | 'history' | 'mystery' | 'scifi' | 'sport' | 'thriller';
+import {Genre} from "./genre"
 
 export class Movie {
   id: number
   key: string
   name: string
   description: string
-  genres: Array<GenreType>
+  genres: Array<Genre>
   rate: string
   length: string
   img: string
