@@ -1,10 +1,10 @@
 <section class="movies-search">
-  <label class="movies-search__label">
+  <label class="movies-search__label -hidden" for="movie-search">Search</label>
     <input type="search"
+           id="movie-search"
            placeholder="Search"
            [(ngModel)]="model"
            (ngModelChange)="onChange()"
            class="movies-search__input -search"
            name="val">
-  </label>
 </section>

@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms'
 import { HttpModule } from '@angular/http'
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
-import { NgReduxModule, NgRedux } from '@angular-redux/store'
+import { NgReduxModule } from '@angular-redux/store'
 import { StoreModule } from './store/module'
 import { MoviesModule } from './movies/movies.module'
 
