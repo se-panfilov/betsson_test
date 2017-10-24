@@ -1,4 +1,36 @@
 <section class="movie-detail">
-  <img [src]="BASE_IMG_URL + movie.img" />
-  {{movie.name}}
+  <div *ngIf="!!movie" class="movie-detail__wrapper">
+
+    <div class="movie-detail__field -primary">
+      <span class="movie-detail__field-key">name:</span>
+      <span class="movie-detail__field-value">{{movie.name}}</span>
+    </div>
+
+    <div class="movie-detail__field -img">
+      <img [src]="BASE_IMG_URL + movie.img" />
+    </div>
+
+    <ul class="movie-detail__list">
+      <li class="movie-detail__list-item"
+          *ngFor="let genre of movie.genres">
+        <span class="movie-detail__field-value">{{genre}}</span>
+      </li>
+    </ul>
+
+    <div class="movie-detail__field">
+      <span class="movie-detail__field-key">rate:</span>
+      <span class="movie-detail__field-value">{{movie.rate}}</span>
+    </div>
+
+
+    <div class="movie-detail__field">
+      <span class="movie-detail__field-key">length:</span>
+      <span class="movie-detail__field-value">{{movie.length}}</span>
+    </div>
+
+    <div class="movie-detail__field">
+      <span class="movie-detail__field-value">{{movie.description}}</span>
+    </div>
+
+  </div>
 </section>
