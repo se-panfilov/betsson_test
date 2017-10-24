@@ -3,7 +3,7 @@ import { Genre } from "../genre"
 import { NgRedux, select } from '@angular-redux/store'
 import { Observable } from "rxjs/Observable"
 import { Storage } from '../../store/storage'
-import { SET_GENRE_FILTER } from "../constants/actions"
+import { CLEAR_GENRE_FILTER, SET_GENRE_FILTER } from "../constants/actions"
 
 // import {IAppState} from "../../store"
 
@@ -23,6 +23,11 @@ export class MoviesFiltersListComponent implements OnInit {
   onClick (genre: Genre) {
     Storage.dispatch({type: SET_GENRE_FILTER, data: genre})
   }
+
+  clear () {
+    Storage.dispatch({type: CLEAR_GENRE_FILTER})
+  }
+
 
   ngOnInit () {
   }

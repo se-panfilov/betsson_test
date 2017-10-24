@@ -1,9 +1,11 @@
 <section class="movies-filters-list">
   <h3 class="movies-filters-list__header">Filter by genre</h3>
   <movies-filter-item
+    class="movies-filters-list__button"
     *ngFor="let genre of genres"
     [genre]="genre"
     (click)="onClick(genre)"
   >
   </movies-filter-item>
+  <button type="button" class="movies-filters-list__button" (click)="clear()">Clear Filtering</button>
 </section>

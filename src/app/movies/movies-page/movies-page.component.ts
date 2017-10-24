@@ -18,6 +18,8 @@ export class MoviesPageComponent implements OnInit {
   movies: Movie[]
   genres: Genre[]
 
+  private MovieReducers = 'MovieReducers'
+
   constructor (private movieService: MovieService, private genreService: GenreService) {
   }
 
@@ -41,10 +43,10 @@ export class MoviesPageComponent implements OnInit {
 
   handleStoreChange () {
     const state = Storage.getState()
-    const movies = state.MovieReducers.get(MOVIES_LIST)
-    const genres = state.MovieReducers.get(GENRES_LIST)
-    const nameFilter = state.MovieReducers.get(MOVIE_NAME_FILTER)
-    const genreFilter = state.MovieReducers.get(GENRE_FILTER)
+    const movies = state.getIn([this.MovieReducers, MOVIES_LIST])
+    const genres = state.getIn([this.MovieReducers, GENRES_LIST])
+    const nameFilter = state.getIn([this.MovieReducers, MOVIE_NAME_FILTER])
+    const genreFilter = state.getIn([this.MovieReducers, GENRE_FILTER])
 
     this.genres = genres.toJS()
     this.movies = movies.toJS()
@@ -54,8 +56,8 @@ export class MoviesPageComponent implements OnInit {
 
   getInitialVals () {
     const state = Storage.getState()
-    this.movies = state.MovieReducers.get(MOVIES_LIST).toJS()
-    this.genres = state.MovieReducers.get(GENRES_LIST).toJS()
+    this.movies = state.getIn([this.MovieReducers, MOVIES_LIST]).toJS()
+    this.genres = state.getIn([this.MovieReducers, GENRES_LIST]).toJS()
   }
 
   async ngOnInit () {
