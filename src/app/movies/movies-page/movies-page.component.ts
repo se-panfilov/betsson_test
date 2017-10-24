@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core'
 import { MovieService } from '../movie.service'
 import { GenreService } from '../genre.service'
 import { Movie } from '../movie'
-import { Genre } from "../genre"
-import { Storage } from "../../store/storage"
-import { SET_GENRES_LIST, SET_MOVIES_LIST } from "../constants/actions"
-import { GENRE_FILTER, GENRES_LIST, MOVIE_NAME_FILTER, MOVIES_LIST } from "../constants/storage"
+import { Genre } from '../genre'
+import { Storage } from '../../store/storage'
+import { SET_GENRES_LIST, SET_MOVIES_LIST } from '../constants/actions'
+import { GENRE_FILTER, GENRES_LIST, MOVIE_NAME_FILTER, MOVIES_LIST } from '../constants/storage'
 
 @Component({
   selector: 'movies',

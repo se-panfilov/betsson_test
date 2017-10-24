@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core'
-import { MovieService } from "../movie.service"
-import { Movie } from "../movie"
-import { BASE_IMG_URL } from "../constants/images"
-import {ActivatedRoute} from '@angular/router'
+import { MovieService } from '../movie.service'
+import { Movie } from '../movie'
+import { BASE_IMG_URL } from '../constants/images'
+import { ActivatedRoute } from '@angular/router'
 
 @Component({
   selector: 'movie-detail',
@@ -15,7 +15,7 @@ export class MovieDetailComponent implements OnInit {
 
   BASE_IMG_URL = BASE_IMG_URL
 
-  constructor (private movieService: MovieService, private route:ActivatedRoute) {
+  constructor (private movieService: MovieService, private route: ActivatedRoute) {
   }
 
   async getMovie (id: number): Promise<any> {

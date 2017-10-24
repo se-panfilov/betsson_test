@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core'
 import { Http } from '@angular/http'
 import { Movie } from './movie'
 import 'rxjs/add/operator/toPromise'
-import { BASE_URL, MOVIES } from "./constants/endpoints"
+import { BASE_URL, MOVIES } from './constants/endpoints'
 
 @Injectable()
 export class MovieService {

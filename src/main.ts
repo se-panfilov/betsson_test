@@ -3,7 +3,7 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic'
 
 import { AppModule } from './app/app.module'
 import { environment } from './environments/environment'
-import { initStorage, setStorage } from "./app/store/storage"
+import { initStorage, setStorage } from './app/store/storage'
 
 if (environment.production) {
   enableProdMode()

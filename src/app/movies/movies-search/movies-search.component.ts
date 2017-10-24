@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core'
-import { SET_MOVIE_NAME_FILTER } from "../constants/actions"
-import { Storage } from "../../store/storage"
+import { SET_MOVIE_NAME_FILTER } from '../constants/actions'
+import { Storage } from '../../store/storage'
 
 @Component({
   selector: 'movies-search',

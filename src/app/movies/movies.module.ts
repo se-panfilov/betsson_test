@@ -6,11 +6,11 @@ import { MoviesListItemComponent } from './movies-list-item/movies-list-item.com
 import { MovieDetailComponent } from './movie-detail/movie-detail.component'
 import { MoviesPageComponent } from './movies-page/movies-page.component'
 import { MovieService } from './movie.service'
-import { GenreService } from "./genre.service"
+import { GenreService } from './genre.service'
 import { MoviesSearchComponent } from './movies-search/movies-search.component'
 import { MoviesFiltersListComponent } from './movies-filters-list/movies-filters-list.component'
 import { MoviesFilterItemComponent } from './movies-filter-item/movies-filter-item.component'
-import { AppRoutingModule } from "../app-routing.module"
+import { AppRoutingModule } from '../app-routing.module'
 
 @NgModule({
   declarations: [

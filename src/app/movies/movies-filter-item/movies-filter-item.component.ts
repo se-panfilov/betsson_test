@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core'
-import { Genre } from "../genre"
+import { Genre } from '../genre'
 
 @Component({
   selector: 'movies-filter-item',

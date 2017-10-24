@@ -1,1 +1,1 @@
-export const BASE_IMG_URL: string = '../assets/images/movie-covers/'
+export const BASE_IMG_URL = '../assets/images/movie-covers/'

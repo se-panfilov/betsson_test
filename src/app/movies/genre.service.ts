@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core'
 import { Http } from '@angular/http'
 import { Genre } from './genre'
 import 'rxjs/add/operator/toPromise'
-import { BASE_URL, GENRES } from "./constants/endpoints"
+import { BASE_URL, GENRES } from './constants/endpoints'
 
 @Injectable()
 export class GenreService {

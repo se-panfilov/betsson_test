@@ -1,4 +1,4 @@
-export type action = {
+export interface Action {
   data: object
   type: string
 }
