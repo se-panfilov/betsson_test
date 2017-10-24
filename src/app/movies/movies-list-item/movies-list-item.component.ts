@@ -3,7 +3,7 @@ import { Movie } from '../movie'
 import { BASE_IMG_URL } from '../constants/images'
 
 @Component({
-  selector: 'movies-list-item',
+  selector: 'app-movies-list-item',
   templateUrl: './movies-list-item.component.html',
   styleUrls: ['./movies-list-item.component.styl']
 })

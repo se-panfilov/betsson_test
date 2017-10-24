@@ -1,11 +1,11 @@
 <section class="movies-filters-list">
-  <movies-filter-item
+  <app-movies-filter-item
     class="movies-filters-list__button"
     *ngFor="let genre of genres"
     [genre]="genre"
     (click)="onClick(genre)"
   >
-  </movies-filter-item>
+  </app-movies-filter-item>
   <button type="button" class="movies-filters-list__button -clear" (click)="clear()">
     <i class="fa fa-times-circle"></i>
     Clear Filtering

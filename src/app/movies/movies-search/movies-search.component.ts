@@ -3,7 +3,7 @@ import { SET_MOVIE_NAME_FILTER } from '../constants/actions'
 import { Storage } from '../../store/storage'
 
 @Component({
-  selector: 'movies-search',
+  selector: 'app-movies-search',
   templateUrl: './movies-search.component.html',
   styleUrls: ['./movies-search.component.styl']
 })

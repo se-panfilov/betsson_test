@@ -5,7 +5,7 @@ import { BASE_IMG_URL } from '../constants/images'
 import { ActivatedRoute } from '@angular/router'
 
 @Component({
-  selector: 'movie-detail',
+  selector: 'app-movie-detail',
   templateUrl: './movie-detail.component.html',
   styleUrls: ['./movie-detail.component.styl']
 })

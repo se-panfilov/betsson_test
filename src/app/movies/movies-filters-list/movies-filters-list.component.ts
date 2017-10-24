@@ -6,7 +6,7 @@ import { Storage } from '../../store/storage'
 import { CLEAR_GENRE_FILTER, SET_GENRE_FILTER } from '../constants/actions'
 
 @Component({
-  selector: 'movies-filters-list',
+  selector: 'app-movies-filters-list',
   templateUrl: './movies-filters-list.component.html',
   styleUrls: ['./movies-filters-list.component.styl']
 })

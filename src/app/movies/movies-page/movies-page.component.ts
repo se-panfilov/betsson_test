@@ -8,7 +8,7 @@ import { SET_GENRES_LIST, SET_MOVIES_LIST } from '../constants/actions'
 import { GENRE_FILTER, GENRES_LIST, MOVIE_NAME_FILTER, MOVIES_LIST } from '../constants/storage'
 
 @Component({
-  selector: 'movies',
+  selector: 'app-movies',
   templateUrl: './movies-page.component.html',
   styleUrls: ['./movies-page.component.styl']
 })
