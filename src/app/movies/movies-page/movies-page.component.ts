@@ -39,12 +39,12 @@ export class MoviesPageComponent implements OnInit {
     return obj.genres.includes(value)
   }
 
-  handleStoreChange (moviesList: string, genresList: string, movieNameFilter: string, genreFilterStr: string) {
+  handleStoreChange () {
     const state = Storage.getState()
-    const movies = state.MovieReducers.get(moviesList)
-    const genres = state.MovieReducers.get(genresList)
-    const nameFilter = state.MovieReducers.get(movieNameFilter)
-    const genreFilter = state.MovieReducers.get(genreFilterStr)
+    const movies = state.MovieReducers.get(MOVIES_LIST)
+    const genres = state.MovieReducers.get(GENRES_LIST)
+    const nameFilter = state.MovieReducers.get(MOVIE_NAME_FILTER)
+    const genreFilter = state.MovieReducers.get(GENRE_FILTER)
 
     this.genres = genres.toJS()
     this.movies = movies.toJS()
@@ -52,12 +52,20 @@ export class MoviesPageComponent implements OnInit {
       .filter(v => this.filterByGenre(v, genreFilter))
   }
 
+  getInitialVals () {
+    const state = Storage.getState()
+    this.movies = state.MovieReducers.get(MOVIES_LIST).toJS()
+    this.genres = state.MovieReducers.get(GENRES_LIST).toJS()
+  }
+
   async ngOnInit () {
     const movies = await this.getMovies()
     const genres = await this.getGenres()
     Storage.dispatch({type: SET_MOVIES_LIST, data: movies})
     Storage.dispatch({type: SET_GENRES_LIST, data: genres})
-    Storage.subscribe(() => this.handleStoreChange(MOVIES_LIST, GENRES_LIST, MOVIE_NAME_FILTER, GENRE_FILTER))
+    this.getInitialVals()
+
+    Storage.subscribe(() => this.handleStoreChange())
   }
 
 }
