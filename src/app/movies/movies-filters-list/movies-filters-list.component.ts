@@ -1,11 +1,9 @@
 import { Component, Input, OnInit } from '@angular/core'
 import { Genre } from "../genre"
-import { NgRedux, select } from '@angular-redux/store'
+import { select } from '@angular-redux/store'
 import { Observable } from "rxjs/Observable"
 import { Storage } from '../../store/storage'
 import { CLEAR_GENRE_FILTER, SET_GENRE_FILTER } from "../constants/actions"
-
-// import {IAppState} from "../../store"
 
 @Component({
   selector: 'movies-filters-list',
