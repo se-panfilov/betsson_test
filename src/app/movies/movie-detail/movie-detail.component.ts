@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core'
 import { MovieService } from "../movie.service"
 import { Movie } from "../movie"
 import { BASE_IMG_URL } from "../constants/images"
+import {ActivatedRoute} from '@angular/router'
 
 @Component({
   selector: 'movie-detail',
@@ -14,7 +15,7 @@ export class MovieDetailComponent implements OnInit {
 
   BASE_IMG_URL = BASE_IMG_URL
 
-  constructor (private movieService: MovieService) {
+  constructor (private movieService: MovieService, private route:ActivatedRoute) {
   }
 
   async getMovie (id: number): Promise<any> {
@@ -22,10 +23,8 @@ export class MovieDetailComponent implements OnInit {
   }
 
   async ngOnInit () {
-    console.info(123)
-    this.movie = await this.getMovie(1)
-    console.info(this.movie)
-    console.info(BASE_IMG_URL)
+    const id = this.route.snapshot.params['id']
+    this.movie = await this.getMovie(id)
   }
 
 }
