@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core'
 import { Movie } from '../movie'
+import { BASE_IMG_URL } from '../constants/images'
 
 @Component({
   selector: 'movies-list-item',
@@ -9,7 +10,7 @@ import { Movie } from '../movie'
 
 export class MoviesListItemComponent implements OnInit {
 
-  baseImgUrl = '../assets/images/movie-covers/'
+  BASE_IMG_URL = BASE_IMG_URL
 
   @Input() movie: Movie
 
