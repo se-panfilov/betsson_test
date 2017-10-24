@@ -3,6 +3,7 @@ import { MovieService } from '../movie.service'
 import { Movie } from '../movie'
 import { BASE_IMG_URL } from '../constants/images'
 import { ActivatedRoute } from '@angular/router'
+import { Location } from '@angular/common'
 
 @Component({
   selector: 'app-movie-detail',
@@ -15,7 +16,13 @@ export class MovieDetailComponent implements OnInit {
 
   BASE_IMG_URL = BASE_IMG_URL
 
-  constructor (private movieService: MovieService, private route: ActivatedRoute) {
+  constructor (private movieService: MovieService,
+               private route: ActivatedRoute,
+               private _location: Location) {
+  }
+
+  goBack () {
+    this._location.back()
   }
 
   async getMovie (id: number): Promise<any> {

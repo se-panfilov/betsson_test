@@ -1,4 +1,8 @@
 <section class="movie-detail">
+  <button type="button" class="movie-detail__button -back" (click)="goBack()" >
+    <i class="fa fa-arrow-left"></i> <span>Back</span>
+  </button>
+
   <div *ngIf="!!movie" class="movie-detail__wrapper">
 
     <section class="movie-detail__main-info">
