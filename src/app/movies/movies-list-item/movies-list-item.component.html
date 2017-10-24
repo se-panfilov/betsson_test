@@ -1,4 +1,6 @@
 <section class="movies-list-item">
-  <img class="movies-list-item__image" [src]="BASE_IMG_URL + movie.img" width="182" height="286" />
+  <div class="movies-list-item__image-wrapper">
+    <img class="movies-list-item__image" [src]="BASE_IMG_URL + movie.img" width="182" height="286" />
+  </div>
   <span class="movies-list-item__name">{{movie.name}}</span>
 </section>

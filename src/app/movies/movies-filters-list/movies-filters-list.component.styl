@@ -1,3 +1,20 @@
+button_text_color = #2a2a2a
+
 .movies-filters-list
   &__button
     display inline-block
+    &.-clear
+      box-sizing content-box
+      padding 7px 5px
+      border 1px solid #c3c3c3
+      border-radius 3px
+      background-color transparent
+      min-width 55px
+      color button_text_color
+      cursor pointer
+      text-decoration none
+      outline none
+      &:hover, &:active &:focus
+        background-color #f9f8f8
+        color lighten(button_text_color, 3)
+

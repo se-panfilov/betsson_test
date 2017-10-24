@@ -1,5 +1,4 @@
 <section class="movies-filters-list">
-  <h3 class="movies-filters-list__header">Filter by genre</h3>
   <movies-filter-item
     class="movies-filters-list__button"
     *ngFor="let genre of genres"
@@ -7,5 +6,8 @@
     (click)="onClick(genre)"
   >
   </movies-filter-item>
-  <button type="button" class="movies-filters-list__button" (click)="clear()">Clear Filtering</button>
+  <button type="button" class="movies-filters-list__button -clear" (click)="clear()">
+    <i class="fa fa-times-circle"></i>
+    Clear Filtering
+  </button>
 </section>

@@ -1,9 +1,17 @@
 .movies-list-item
   text-align center
   max-width 182px
+  cursor pointer
+  &:hover
+    .movies-list-item__image
+      transform scale(1.2)
+  &__image-wrapper
+    width 182px
+    height 286px
+    overflow hidden
   &__image
     display block
     padding-bottom 5px
+    transition all 0.35s
   &__name
     display block
-
