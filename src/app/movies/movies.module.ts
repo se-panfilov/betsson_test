@@ -28,7 +28,7 @@ import { AppRoutingModule } from '../app-routing.module'
     FormsModule
   ],
   providers: [MovieService, GenreService],
-  //bootstrap: [AppComponent]
+  // bootstrap: [AppComponent]
 })
 
 export class MoviesModule {
