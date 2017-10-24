@@ -5,7 +5,7 @@ import { Storage } from "../../store/storage"
 @Component({
   selector: 'movies-search',
   templateUrl: './movies-search.component.html',
-  styleUrls: ['./movies-search.component.css']
+  styleUrls: ['./movies-search.component.styl']
 })
 export class MoviesSearchComponent implements OnInit {
   model = ''

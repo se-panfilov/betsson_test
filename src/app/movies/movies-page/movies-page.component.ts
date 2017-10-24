@@ -10,7 +10,7 @@ import { GENRE_FILTER, GENRES_LIST, MOVIE_NAME_FILTER, MOVIES_LIST } from "../co
 @Component({
   selector: 'movies',
   templateUrl: './movies-page.component.html',
-  styleUrls: ['./movies-page.component.css']
+  styleUrls: ['./movies-page.component.styl']
 })
 
 export class MoviesPageComponent implements OnInit {

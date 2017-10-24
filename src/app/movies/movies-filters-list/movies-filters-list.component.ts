@@ -10,7 +10,7 @@ import { CLEAR_GENRE_FILTER, SET_GENRE_FILTER } from "../constants/actions"
 @Component({
   selector: 'movies-filters-list',
   templateUrl: './movies-filters-list.component.html',
-  styleUrls: ['./movies-filters-list.component.css']
+  styleUrls: ['./movies-filters-list.component.styl']
 })
 export class MoviesFiltersListComponent implements OnInit {
 

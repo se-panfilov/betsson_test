@@ -4,7 +4,7 @@ import { Movie } from '../movie'
 @Component({
   selector: 'movies-list',
   templateUrl: './movies-list.component.html',
-  styleUrls: ['./movies-list.component.css']
+  styleUrls: ['./movies-list.component.styl']
 })
 
 export class MoviesListComponent implements OnInit {

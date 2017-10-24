@@ -5,7 +5,7 @@ import { BASE_IMG_URL } from '../constants/images'
 @Component({
   selector: 'movies-list-item',
   templateUrl: './movies-list-item.component.html',
-  styleUrls: ['./movies-list-item.component.css']
+  styleUrls: ['./movies-list-item.component.styl']
 })
 
 export class MoviesListItemComponent implements OnInit {

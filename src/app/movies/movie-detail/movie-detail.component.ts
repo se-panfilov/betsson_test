@@ -6,7 +6,7 @@ import { BASE_IMG_URL } from "../constants/images"
 @Component({
   selector: 'movie-detail',
   templateUrl: './movie-detail.component.html',
-  styleUrls: ['./movie-detail.component.css']
+  styleUrls: ['./movie-detail.component.styl']
 })
 export class MovieDetailComponent implements OnInit {
 

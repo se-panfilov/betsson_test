@@ -4,7 +4,7 @@ import { Genre } from "../genre"
 @Component({
   selector: 'movies-filter-item',
   templateUrl: './movies-filter-item.component.html',
-  styleUrls: ['./movies-filter-item.component.css']
+  styleUrls: ['./movies-filter-item.component.styl']
 })
 export class MoviesFilterItemComponent implements OnInit {
 
